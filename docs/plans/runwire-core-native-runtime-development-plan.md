@@ -145,7 +145,7 @@ The C0–C10 batch table above remains the progress summary. **The numbered task
 ### Planned package layout and artifacts
 
 - Cargo workspace with explicit crates for Zend binding/extension entry, engine/reactor, HTTP transport, process lifecycle, metrics and optional QUIC; split only where it reduces real ownership or test complexity.
-- PIE php-ext package manifest and build integration suitable for clean source installation, including Cargo toolchain requirements, PHP headers and phpize; verify exact PI E/Composer schema and installed module name in C0. The typo-free packaging name proposed elsewhere is infocyph/runwire-core.
+- PIE php-ext package manifest and build integration suitable for clean source installation, including Cargo toolchain requirements, PHP headers and phpize; verify exact PIE/Composer schema and installed module name in C0. The typo-free packaging name proposed elsewhere is infocyph/runwire-core.
 - PHP-facing stubs/arginfo/documentation consistent with actual exported Zend symbols; PHP-specific tests and PHPStan-facing reflection/introspection tests.
 - Rust unit/property tests and fuzz targets for native parsers/state transitions, plus black-box real-socket tests driven by an independent client.
 - Benchmarks for native-vs-PHP invocation overhead, end-to-end HTTP1/2/3, CPU/RSS, response correctness, connection and worker churn.
